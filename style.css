@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eaeaea;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav button {
+  flex: 1;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #66fe4f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79,172,254,0.3);
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #13c62d;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0d8a20;
+}
+
+.delete-btn {
+  margin-top: 8px;
+  background: #fc2a2a;
+}
+
+.delete-btn:hover {
+  background: #971818;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.nama {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.kategori {
+  font-size: 12px;
+  color: #4facfe;
+}
+
+.isi {
+  margin: 5px 0;
+}
+
+.small {
+  font-size: 11px;
+  color: gray;
+}
+
+.map-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.angkot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.angktbtn {
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.angktbtn:hover {
+  transform: scale(1.05);
+}
+
+#search {
+  margin-bottom: 10px;
+}

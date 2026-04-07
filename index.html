@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="asset/kotpin.ico" type="image/x-icon">
+  <title>Kotpin - Angkot Pintar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card nav">
+    <button onclick="showPage('laporan')">Laporan</button>
+    <button onclick="showPage('map')">Map</button>
+  </div>
+
+<div id="laporanPage" style="display:none;">
+    <h1>Laporan Kotpin</h1>
+
+    <div class="card form-card">
+      <input type="text" id="nama" placeholder="Nama Pelapor">
+      
+      <select id="kategori">
+        <option>Perubahan Jalan</option>
+        <option>Perubahan Warna/Nomor</option>
+        <option>Perubahan Rute</option>
+        <option>Rute Terblokir</option>
+        <option>Masalah Website</option>
+      </select>
+
+      <textarea id="laporan" placeholder="Isi laporan..."></textarea>
+
+      <button id="kirim">Kirim Laporan</button>
+    </div>
+
+    <div class="card">
+      <h2>Laporan</h2>
+      <ul id="list"></ul>
+    </div>
+
+  </div>
+
+  <div id="mapPage">
+
+    <h1>Kotpin</h1>
+
+    <input type="text" id="search" placeholder="Cari angkot (01, 09, dll...)">
+
+    <div class="card">
+      <img id="mapview" src="asset/stasiun/01.webp" class="map-img">
+    </div>
+
+    <div class="angkot-grid">
+
+      <img src="asset/noang/01.png" onclick="changeMap('01')" class="angktbtn">
+      <img src="asset/noang/09.png" onclick="changeMap('09')" class="angktbtn">
+      <img src="asset/noang/13.png" onclick="changeMap('13')" class="angktbtn">
+      <img src="asset/noang/16.png" onclick="changeMap('16')" class="angktbtn">
+      <img src="asset/noang/18.png" onclick="changeMap('18')" class="angktbtn">
+      <img src="asset/noang/22.png" onclick="changeMap('22')" class="angktbtn">
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
